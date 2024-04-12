@@ -12,14 +12,13 @@
         <source src="vid/aventurine_background.mp4" type="video/mp4">
     </video>
 
-    <div class="overlay" id="overlay">
-        <button class="play-button" id="playButton" onclick="playVideoWithSound()" data-bs-toggle="tooltip" data-bs-placement="top" title="Press to Continue">
-            <img src="img/kakavasha.webp" alt="Press to Start!">
-            <span class="grade-title">Aventurine Grade Calculator</span>
-        </button>
-    </div>
+    <button class="sound-button" id="soundButton" onclick="toggleSound()" data-bs-toggle="tooltip" data-bs-placement="top" title="Toggle Sound">
+        <img src="img/kakavasha.webp" alt="Sound Button">
+    </button>
 
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <div class="chat-bubble" id="chatBubble">Press Me For Sound</div>
+
     <script src="js/aventurine_script.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
