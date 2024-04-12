@@ -2,7 +2,7 @@ window.onload = function() {
     var chatBubble = document.getElementById('chatBubble');
     setTimeout(function() {
         chatBubble.style.display = 'none';
-    }, 8000); // Hide chat bubble after 8 seconds
+    }, 5000);
 };
 
 function toggleSound() {
@@ -16,6 +16,5 @@ function toggleSound() {
     } else {
         video.muted = true;
         soundButton.innerHTML = '<img src="img/kakavasha.webp" alt="Mute Button">';
-        chatBubble.style.display = 'block';
     }
 }
