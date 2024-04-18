@@ -16,30 +16,3 @@ body {
     object-fit: cover;
     z-index: -1;
 }
-
-.sound-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-
-.sound-button img {
-    width: 50px;
-    height: 50px;
-}
-
-.chat-bubble {
-    position: absolute;
-    top: 10px;
-    right: 90px; /* Adjust this value for positioning */
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    z-index: 1;
-}

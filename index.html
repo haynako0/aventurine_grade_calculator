@@ -12,11 +12,32 @@
         <source src="vid/aventurine_background.mp4" type="video/mp4">
     </video>
 
-    <button class="sound-button" id="soundButton" onclick="toggleSound()" data-bs-toggle="tooltip" data-bs-placement="top" title="Toggle Sound">
-        <img src="img/kakavasha.webp" alt="Sound Button">
-    </button>
-
-    <div class="chat-bubble" id="chatBubble">Press Me For Sound</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-5">
+                <h2 class="text-center">Aventurine Grade Calculator</h2>
+                <form id="gradeForm">
+                    <div class="mb-3">
+                        <label for="quizzes" class="form-label">Quizzes (30%)</label>
+                        <input type="number" class="form-control" id="quizzes" min="0" max="100" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="requirements" class="form-label">Requirements (30%)</label>
+                        <input type="number" class="form-control" id="requirements" min="0" max="100" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="majorExams" class="form-label">Major Exams (30%)</label>
+                        <input type="number" class="form-control" id="majorExams" min="0" max="100" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="attendance" class="form-label">Attendance (10%)</label>
+                        <input type="number" class="form-control" id="attendance" min="0" max="100" required>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="computeGradeBtn">Compute Grade</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/aventurine_script.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
