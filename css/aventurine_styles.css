@@ -16,3 +16,15 @@ body {
     object-fit: cover;
     z-index: -1;
 }
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffff99;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #996633;
+}
+
+label, input[type="number"] {
+    -webkit-text-stroke-width: 0.55px;
+    -webkit-text-stroke-color: #000000;
+}
